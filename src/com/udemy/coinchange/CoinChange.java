@@ -13,7 +13,8 @@ public class CoinChange {
     public void dpCoinChange(int m, int[] v) {
         int[][] table = new int[v.length + 1][m + 1];
         for (int i = 0; i < v.length; i++) {
-            table[i][0]
+//            table[i][0]
         }
     }
 }
+

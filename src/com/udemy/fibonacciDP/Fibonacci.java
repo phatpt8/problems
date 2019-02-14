@@ -24,3 +24,4 @@ public class Fibonacci {
         return naiveFibonacci(n - 1) + naiveFibonacci(n - 2);
     }
 }
+

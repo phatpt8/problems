@@ -29,3 +29,4 @@ public class Algorithm {
         return calc(accumulator*n, n - 1);
     }
 }
+

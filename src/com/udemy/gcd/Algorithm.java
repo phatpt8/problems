@@ -18,3 +18,4 @@ public class Algorithm {
         return  gcdRecursive(num2, num1 % num2);
     }
 }
+
