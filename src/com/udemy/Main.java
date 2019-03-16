@@ -94,10 +94,10 @@ public class Main {
 //        ks.solve();
 //        ks.showResult();
 
-        int[] v = {1, 2, 3};
-        int m = 5;
+        int[] v = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int m = 4000;
         CoinChange cc = new CoinChange();
-        System.out.println(cc.naiveCoinChange(m, v, 0));
+        cc.dpCoinChange(m, v);
     }
 }
 

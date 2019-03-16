@@ -12,9 +12,23 @@ public class CoinChange {
 
     public void dpCoinChange(int m, int[] v) {
         int[][] table = new int[v.length + 1][m + 1];
-        for (int i = 0; i < v.length; i++) {
-//            table[i][0]
+        for (int i = 0; i <= v.length; i++) {
+            table[i][0] = 1;
         }
+        for (int i = 0; i <= m; i++) {
+            table[0][i] = 0;
+        }
+        for (int i = 1; i <= v.length;i++) {
+            for (int j = 1; j <= m;j++) {
+                if (v[i - 1] <= j) {
+                    table[i][j] = table[i - 1][j] + table[i][j - v[i - 1]];
+                } else {
+                    table[i][j] = table[i - 1][j];
+                }
+            }
+        }
+
+        System.out.println("Solution: " + table[v.length][m]);
     }
 }
 
